@@ -1,0 +1,122 @@
+QuestaSim vcom 10.2c Compiler 2013.07 Jul 18 2013
+/home/tools/questasim/questasim/bin/../linux/vcom -novopt -cover sbceft -l uart_multiple_write_fifo_broadcast_test.vhdl.compile.log -f /mnt/rtl/file.lst 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity baud_Gen
+-- Compiling architecture arch of baud_Gen
+-- Compiling entity flag_buff
+-- Compiling architecture arch of flag_buff
+-- Compiling entity spi2uart_fifo
+-- Compiling architecture arch of spi2uart_fifo
+-- Compiling entity uart2spi_fifo
+-- Compiling architecture arch of uart2spi_fifo
+-- Compiling entity uart_rx
+-- Compiling architecture arch of uart_rx
+** Note: (vcom-143) Recognized 1 FSM in architecture body "uart_rx(arch)".
+-- Compiling entity uart_tx
+-- Compiling architecture arch of uart_tx
+** Note: (vcom-143) Recognized 1 FSM in architecture body "uart_tx(arch)".
+-- Compiling entity uart2fifo_ctrl
+-- Compiling architecture arch of uart2fifo_ctrl
+** Note: (vcom-143) Recognized 1 FSM in architecture body "uart2fifo_ctrl(arch)".
+-- Compiling entity dn_host
+-- Compiling architecture arch of dn_host
+-- Compiling entity uart_loopback
+-- Compiling architecture arch of uart_loopback
+-- Compiling entity fifo2uart_ctrl
+-- Compiling architecture arch of fifo2uart_ctrl
+** Note: (vcom-143) Recognized 1 FSM in architecture body "fifo2uart_ctrl(arch)".
+-- Compiling entity uart_sys
+-- Compiling architecture arch of uart_sys
+-- Compiling entity dn_reg
+-- Compiling architecture arch of dn_reg
+-- Compiling entity uart
+-- Compiling architecture arch of uart
+-- Compiling entity spi_host
+-- Compiling architecture arch of spi_host
+-- Compiling entity spi_device
+-- Compiling architecture arch of spi_device
+-- Compiling entity dn_device
+-- Compiling architecture arch of dn_device
+-- Compiling entity spi_s_fifo
+-- Compiling architecture arch of spi_s_fifo
+-- Compiling entity spi_m_fifo
+-- Compiling architecture arch of spi_m_fifo
+-- Compiling entity spi_clk_gen
+-- Compiling architecture arch of spi_clk_gen
+-- Compiling entity spi_s
+-- Compiling architecture arch of spi_s
+** Note: (vcom-143) Recognized 1 FSM in architecture body "spi_s(arch)".
+-- Compiling entity spi2fifo_ctrl
+-- Compiling architecture arch of spi2fifo_ctrl
+-- Compiling entity fifo_loopback
+-- Compiling architecture arch of fifo_loopback
+** Note: (vcom-143) Recognized 1 FSM in architecture body "fifo_loopback(arch)".
+-- Compiling entity spi_m
+-- Compiling architecture arch of spi_m
+** Note: (vcom-143) Recognized 1 FSM in architecture body "spi_m(arch)".
+-- Compiling entity spi_loopback
+-- Compiling architecture arch of spi_loopback
+-- Compiling entity virtual_top
+-- Compiling architecture arch of virtual_top
+-- Loading package VCOMPONENTS
+-- Compiling entity fifo_generator_0_builtin_prim_v6
+-- Compiling architecture STRUCTURE of fifo_generator_0_builtin_prim_v6
+-- Compiling entity fifo_generator_0_reset_builtin
+-- Compiling architecture STRUCTURE of fifo_generator_0_reset_builtin
+-- Compiling entity fifo_generator_0_builtin_extdepth_v6
+-- Compiling architecture STRUCTURE of fifo_generator_0_builtin_extdepth_v6
+-- Loading entity fifo_generator_0_builtin_prim_v6
+-- Compiling entity fifo_generator_0_builtin_top_v6
+-- Compiling architecture STRUCTURE of fifo_generator_0_builtin_top_v6
+-- Loading entity fifo_generator_0_builtin_extdepth_v6
+-- Compiling entity fifo_generator_0_fifo_generator_v12_0_builtin
+-- Compiling architecture STRUCTURE of fifo_generator_0_fifo_generator_v12_0_builtin
+-- Loading entity fifo_generator_0_reset_builtin
+-- Loading entity fifo_generator_0_builtin_top_v6
+-- Compiling entity fifo_generator_0_fifo_generator_top
+-- Compiling architecture STRUCTURE of fifo_generator_0_fifo_generator_top
+-- Loading entity fifo_generator_0_fifo_generator_v12_0_builtin
+-- Compiling entity fifo_generator_0_fifo_generator_v12_0_synth
+-- Compiling architecture STRUCTURE of fifo_generator_0_fifo_generator_v12_0_synth
+-- Loading entity fifo_generator_0_fifo_generator_top
+-- Compiling entity \fifo_generator_0_fifo_generator_v12_0__parameterized0\
+-- Compiling architecture STRUCTURE of \fifo_generator_0_fifo_generator_v12_0__parameterized0\
+-- Loading entity fifo_generator_0_fifo_generator_v12_0_synth
+-- Compiling entity fifo_generator_0
+-- Compiling architecture STRUCTURE of fifo_generator_0
+-- Loading entity \fifo_generator_0_fifo_generator_v12_0__parameterized0\
+-- Compiling entity uart2spi_fifo
+-- Compiling architecture STRUCTURE of uart2spi_fifo
+-- Loading entity fifo_generator_0
+-- Compiling entity fifo_generator_1_builtin_prim_v6
+-- Compiling architecture STRUCTURE of fifo_generator_1_builtin_prim_v6
+-- Compiling entity fifo_generator_1_reset_builtin
+-- Compiling architecture STRUCTURE of fifo_generator_1_reset_builtin
+-- Compiling entity fifo_generator_1_builtin_extdepth_v6
+-- Compiling architecture STRUCTURE of fifo_generator_1_builtin_extdepth_v6
+-- Loading entity fifo_generator_1_builtin_prim_v6
+-- Compiling entity fifo_generator_1_builtin_top_v6
+-- Compiling architecture STRUCTURE of fifo_generator_1_builtin_top_v6
+-- Loading entity fifo_generator_1_builtin_extdepth_v6
+-- Compiling entity fifo_generator_1_fifo_generator_v12_0_builtin
+-- Compiling architecture STRUCTURE of fifo_generator_1_fifo_generator_v12_0_builtin
+-- Loading entity fifo_generator_1_reset_builtin
+-- Loading entity fifo_generator_1_builtin_top_v6
+-- Compiling entity fifo_generator_1_fifo_generator_top
+-- Compiling architecture STRUCTURE of fifo_generator_1_fifo_generator_top
+-- Loading entity fifo_generator_1_fifo_generator_v12_0_builtin
+-- Compiling entity fifo_generator_1_fifo_generator_v12_0_synth
+-- Compiling architecture STRUCTURE of fifo_generator_1_fifo_generator_v12_0_synth
+-- Loading entity fifo_generator_1_fifo_generator_top
+-- Compiling entity \fifo_generator_1_fifo_generator_v12_0__parameterized0\
+-- Compiling architecture STRUCTURE of \fifo_generator_1_fifo_generator_v12_0__parameterized0\
+-- Loading entity fifo_generator_1_fifo_generator_v12_0_synth
+-- Compiling entity fifo_generator_1
+-- Compiling architecture STRUCTURE of fifo_generator_1
+-- Loading entity \fifo_generator_1_fifo_generator_v12_0__parameterized0\
+-- Compiling entity spi2uart_fifo
+-- Compiling architecture STRUCTURE of spi2uart_fifo
+-- Loading entity fifo_generator_1

@@ -1,0 +1,20 @@
+`ifndef __UART_INTERFACE_SVI__
+`define __UART_INTERFACE_SVI__
+
+interface uart_interface (input logic clk, input logic reset);
+
+logic       rx       ;
+logic       tx       ;
+logic [7:0] data_obs ;
+
+clocking cb @(posedge clk);
+    default input #1 output #1;
+    output tx ;
+    input  rx ;
+endclocking
+
+modport master(clocking cb, output reset);
+
+endinterface
+`endif
+

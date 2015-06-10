@@ -1,0 +1,5 @@
+-html
+-htmldir
+cov
+-verbose
+cov_all.ucdb

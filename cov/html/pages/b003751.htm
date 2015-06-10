@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _u_spi_host1_u_fifo_loopbackContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z003688.htm">u_spi_host1</a>/<a href="z003751.htm">u_fifo_loopback</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="covered"><a name="cvg3752"/><hr/><table>
+  <tr l="47" lnk="__HDL_srcfile_11.htm#47" z="    if(reset = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="47" lnk="__HDL_srcfile_11.htm#47" z="    if(reset = '1') then" h="132" c="g"/>
+  <tr cr="c" t="T" l="49" lnk="__HDL_srcfile_11.htm#49" z="    elsif(rising_edge(clk)) then" h="88481259" c="g"/>
+  <tr cr="e" t="A" l="47" lnk="__HDL_srcfile_11.htm#47" z="    if(reset = '1') then" h="E-Miss"/>
+  </table>
+  </div><div class="covered"><a name="cvg3753"/><hr/><table>
+  <tr l="60" lnk="__HDL_srcfile_11.htm#60" z="    case(loopback_state_reg) is" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="T" l="61" lnk="__HDL_srcfile_11.htm#61" z="        when idle =&gt;" h="17213" c="g"/>
+  <tr cr="c" t="T" l="65" lnk="__HDL_srcfile_11.htm#65" z="        when readFifo =&gt;" h="5224" c="g"/>
+  <tr cr="c" t="T" l="72" lnk="__HDL_srcfile_11.htm#72" z="        when writeFifo =&gt;" h="5224" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg3754"/><hr/><table>
+  <tr l="62" lnk="__HDL_srcfile_11.htm#62" z="            if(fifo_loopback_en = '1' and fifo_empty = '0') the..." c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="62" lnk="__HDL_srcfile_11.htm#62" z="            if(fifo_loopback_en = '1' and fifo_empty = '0') the..." h="2612" c="g"/>
+  <tr cr="c" t="A" l="62" lnk="__HDL_srcfile_11.htm#62" z="            if(fifo_loopback_en = '1' and fifo_empty = '0') the..." h="14601" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg3755"/><hr/><table>
+  <tr l="66" lnk="__HDL_srcfile_11.htm#66" z="            if(fifo_empty = '0') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="66" lnk="__HDL_srcfile_11.htm#66" z="            if(fifo_empty = '0') then" h="2612" c="g"/>
+  <tr cr="c" t="E" l="69" lnk="__HDL_srcfile_11.htm#69" z="            else" h="2612" c="g"/>
+  </table>
+  </div><div><a name="cvg3756"/><hr/><table>
+  <tr l="73" lnk="__HDL_srcfile_11.htm#73" z="            if(fifo_full = '0') then" c="Y" p="50.00"/><tr/>
+  <tr cr="c" t="I" l="73" lnk="__HDL_srcfile_11.htm#73" z="            if(fifo_full = '0') then" h="5224" c="g"/>
+  <tr cr="m" t="E" l="76" lnk="__HDL_srcfile_11.htm#76" z="            else" h="0" c="r"/>
+  </table>
+  </div><div class="covered"><a name="cvg3757"/><hr/><table>
+  <tr l="83" lnk="__HDL_srcfile_11.htm#83" z="fifo_din &lt;= fifo_dout when fifo_loopback_en = '1' else fifo_din..." c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="83" lnk="__HDL_srcfile_11.htm#83" z="fifo_din &lt;= fifo_dout when fifo_loopback_en = '1' else fifo_din..." h="2610" c="g"/>
+  <tr cr="c" t="E" l="83" lnk="__HDL_srcfile_11.htm#83" z="fifo_din &lt;= fifo_dout when fifo_loopback_en = '1' else fifo_din..." h="17900" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg3758"/><hr/><table>
+  <tr l="84" lnk="__HDL_srcfile_11.htm#84" z="fifo_rd_en &lt;= loopback_fifo_rd_en when fifo_loopback_en = '1' e..." c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="84" lnk="__HDL_srcfile_11.htm#84" z="fifo_rd_en &lt;= loopback_fifo_rd_en when fifo_loopback_en = '1' e..." h="5229" c="g"/>
+  <tr cr="c" t="E" l="84" lnk="__HDL_srcfile_11.htm#84" z="fifo_rd_en &lt;= loopback_fifo_rd_en when fifo_loopback_en = '1' e..." h="11972" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg3759"/><hr/><table>
+  <tr l="85" lnk="__HDL_srcfile_11.htm#85" z="fifo_wr_en &lt;= loopback_fifo_wr_en when fifo_loopback_en = '1' e..." c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="85" lnk="__HDL_srcfile_11.htm#85" z="fifo_wr_en &lt;= loopback_fifo_wr_en when fifo_loopback_en = '1' e..." h="5230" c="g"/>
+  <tr cr="c" t="E" l="85" lnk="__HDL_srcfile_11.htm#85" z="fifo_wr_en &lt;= loopback_fifo_wr_en when fifo_loopback_en = '1' e..." h="11983" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg3760"/><hr/><table>
+  <tr l="87" lnk="__HDL_srcfile_11.htm#87" z="fifo_dout_ext &lt;= fifo_dout when fifo_loopback_en = '0' else (ot..." c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="87" lnk="__HDL_srcfile_11.htm#87" z="fifo_dout_ext &lt;= fifo_dout when fifo_loopback_en = '0' else (ot..." h="5978" c="g"/>
+  <tr cr="c" t="E" l="87" lnk="__HDL_srcfile_11.htm#87" z="fifo_dout_ext &lt;= fifo_dout when fifo_loopback_en = '0' else (ot..." h="2636" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg3761"/><hr/><table>
+  <tr l="88" lnk="__HDL_srcfile_11.htm#88" z="fifo_empty_ext &lt;= fifo_empty when fifo_loopback_en = '0' else '..." c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="88" lnk="__HDL_srcfile_11.htm#88" z="fifo_empty_ext &lt;= fifo_empty when fifo_loopback_en = '0' else '..." h="11956" c="g"/>
+  <tr cr="c" t="E" l="88" lnk="__HDL_srcfile_11.htm#88" z="fifo_empty_ext &lt;= fifo_empty when fifo_loopback_en = '0' else '..." h="5257" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg3762"/><hr/><table>
+  <tr l="89" lnk="__HDL_srcfile_11.htm#89" z="fifo_full_ext &lt;= fifo_full when fifo_loopback_en = '0' else '1'..." c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="89" lnk="__HDL_srcfile_11.htm#89" z="fifo_full_ext &lt;= fifo_full when fifo_loopback_en = '0' else '1'..." h="28" c="g"/>
+  <tr cr="c" t="E" l="89" lnk="__HDL_srcfile_11.htm#89" z="fifo_full_ext &lt;= fifo_full when fifo_loopback_en = '0' else '1'..." h="33" c="g"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

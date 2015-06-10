@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _u_spi_mContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z008029.htm">u_spi_m</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="covered"><a name="cvg8030"/><hr/><table>
+  <tr l="69" lnk="__HDL_srcfile_16.htm#69" z="    if(reset = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="69" lnk="__HDL_srcfile_16.htm#69" z="    if(reset = '1') then" h="11" c="g"/>
+  <tr cr="c" t="T" l="74" lnk="__HDL_srcfile_16.htm#74" z="    elsif(rising_edge(clk)) then" h="14190442" c="g"/>
+  <tr cr="e" t="A" l="69" lnk="__HDL_srcfile_16.htm#69" z="    if(reset = '1') then" h="E-Miss"/>
+  </table>
+  </div><div class="covered"><a name="cvg8031"/><hr/><table>
+  <tr l="90" lnk="__HDL_srcfile_16.htm#90" z="    case state_reg is" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="T" l="91" lnk="__HDL_srcfile_16.htm#91" z="        when idle =&gt;" h="7074714" c="g"/>
+  <tr cr="c" t="T" l="98" lnk="__HDL_srcfile_16.htm#98" z="        when writeSPI =&gt;" h="30765" c="g"/>
+  <tr cr="c" t="T" l="111" lnk="__HDL_srcfile_16.htm#111" z="        when readFifoWriteSPI =&gt;" h="4395" c="g"/>
+  <tr cr="c" t="T" l="125" lnk="__HDL_srcfile_16.htm#125" z="        when stop =&gt;" h="4395" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg8032"/><hr/><table>
+  <tr l="93" lnk="__HDL_srcfile_16.htm#93" z="            if(fifo_empty = '0') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="93" lnk="__HDL_srcfile_16.htm#93" z="            if(fifo_empty = '0') then" h="1465" c="g"/>
+  <tr cr="c" t="A" l="93" lnk="__HDL_srcfile_16.htm#93" z="            if(fifo_empty = '0') then" h="7073249" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg8033"/><hr/><table>
+  <tr l="99" lnk="__HDL_srcfile_16.htm#99" z="            if(s_tick = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="99" lnk="__HDL_srcfile_16.htm#99" z="            if(s_tick = '1') then" h="20097" c="g"/>
+  <tr cr="c" t="A" l="99" lnk="__HDL_srcfile_16.htm#99" z="            if(s_tick = '1') then" h="10668" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg8034"/><hr/><table>
+  <tr l="100" lnk="__HDL_srcfile_16.htm#100" z="                if(spi_cnt_reg = 0) then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="100" lnk="__HDL_srcfile_16.htm#100" z="                if(spi_cnt_reg = 0) then" h="2517" c="g"/>
+  <tr cr="c" t="E" l="102" lnk="__HDL_srcfile_16.htm#102" z="                else" h="17580" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg8035"/><hr/><table>
+  <tr l="107" lnk="__HDL_srcfile_16.htm#107" z="                if(spi_cnt_reg = 6) then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="107" lnk="__HDL_srcfile_16.htm#107" z="                if(spi_cnt_reg = 6) then" h="2930" c="g"/>
+  <tr cr="c" t="A" l="107" lnk="__HDL_srcfile_16.htm#107" z="                if(spi_cnt_reg = 6) then" h="17167" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg8036"/><hr/><table>
+  <tr l="112" lnk="__HDL_srcfile_16.htm#112" z="            if(s_tick = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="112" lnk="__HDL_srcfile_16.htm#112" z="            if(s_tick = '1') then" h="2930" c="g"/>
+  <tr cr="c" t="A" l="112" lnk="__HDL_srcfile_16.htm#112" z="            if(s_tick = '1') then" h="1465" c="g"/>
+  </table>
+  </div><div><a name="cvg8037"/><hr/><table>
+  <tr l="116" lnk="__HDL_srcfile_16.htm#116" z="                if(fifo_empty = '0') then" c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" l="116" lnk="__HDL_srcfile_16.htm#116" z="                if(fifo_empty = '0') then" h="0" c="r"/>
+  <tr cr="c" t="A" l="116" lnk="__HDL_srcfile_16.htm#116" z="                if(fifo_empty = '0') then" h="2930" c="g"/>
+  </table>
+  </div><div><a name="cvg8038"/><hr/><table>
+  <tr l="119" lnk="__HDL_srcfile_16.htm#119" z="                if(fifo_empty = '0') then" c="Y" p="50.00"/><tr/>
+  <tr cr="m" t="I" l="119" lnk="__HDL_srcfile_16.htm#119" z="                if(fifo_empty = '0') then" h="0" c="r"/>
+  <tr cr="c" t="E" l="121" lnk="__HDL_srcfile_16.htm#121" z="                else" h="2930" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg8039"/><hr/><table>
+  <tr l="126" lnk="__HDL_srcfile_16.htm#126" z="            if(s_tick = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="126" lnk="__HDL_srcfile_16.htm#126" z="            if(s_tick = '1') then" h="2930" c="g"/>
+  <tr cr="c" t="A" l="126" lnk="__HDL_srcfile_16.htm#126" z="            if(s_tick = '1') then" h="1465" c="g"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>

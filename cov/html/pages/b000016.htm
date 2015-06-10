@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Questa Coverage Report</title>
+  <!-- original name: _work.uart2fifo_ctrl(arch)ContentFrame2.htm -->
+  <link rel="StyleSheet" media="print"  href="../css/ucdb2htmlP.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html.css"/>
+  <link rel="StyleSheet" media="screen" href="../css/ucdb2html_newlook.css"/>
+  <script type="text/javascript" src="../scripts/jquery.js"></script>
+  <script type="text/javascript" src="../scripts/showhide.js"></script>
+  
+</head>
+<body id="ucdb2html_detail" onload="showLast()">
+  <h1><span class="strip">Questa</span> Branch Coverage Report</h1>
+  <h3>Scope: /<a href="z000016.htm">work.uart2fifo_ctrl(arch)</a></h3>
+  <!-- use script block so buttons vanish when JavaScript is disabled -->
+  <script type="text/javascript">
+  <!--
+  document.write(
+    '<table class="buttons" cellspacing="2" cellpadding="2"><tr>' +
+       '<td id="showAll" width="100" onclick="showAll()" class="button_on" ' +
+           'title="Display all coverage scopes and bins.">Show All</td>' +
+       '<td id="showCov" width="100" onclick="showCov()" class="button_off" ' +
+           'title="Display only covered scopes and bins.">Show Covered</td>' +
+       '<td id="showMis" width="100" onclick="showMis()" class="button_off" ' +
+           'title="Display only uncovered scopes and bins.">Show Missing</td>' +
+    '</tr></table>');
+  //-->
+  </script>
+  <div class="covered"><a name="cvg648"/><hr/><table>
+  <tr l="65" lnk="__HDL_srcfile_8.htm#65" z="uart2spi_fifo_sel &lt;= uart2spi_fifo_sel_reg when broadcast_reg =..." c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="65" lnk="__HDL_srcfile_8.htm#65" z="uart2spi_fifo_sel &lt;= uart2spi_fifo_sel_reg when broadcast_reg =..." h="164" c="g"/>
+  <tr cr="c" t="E" l="65" lnk="__HDL_srcfile_8.htm#65" z="uart2spi_fifo_sel &lt;= uart2spi_fifo_sel_reg when broadcast_reg =..." h="88" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg649"/><hr/><table>
+  <tr l="72" lnk="__HDL_srcfile_8.htm#72" z="    if(reset = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="72" lnk="__HDL_srcfile_8.htm#72" z="    if(reset = '1') then" h="132" c="g"/>
+  <tr cr="c" t="T" l="82" lnk="__HDL_srcfile_8.htm#82" z="    elsif(rising_edge(clk)) then" h="88481259" c="g"/>
+  <tr cr="e" t="A" l="72" lnk="__HDL_srcfile_8.htm#72" z="    if(reset = '1') then" h="E-Miss"/>
+  </table>
+  </div><div class="covered"><a name="cvg650"/><hr/><table>
+  <tr l="112" lnk="__HDL_srcfile_8.htm#112" z="    case(rx_state_reg) is" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="T" l="113" lnk="__HDL_srcfile_8.htm#113" z="        when idle =&gt;" h="4183" c="g"/>
+  <tr cr="c" t="T" l="135" lnk="__HDL_srcfile_8.htm#135" z="        when writeReg =&gt; " h="156" c="g"/>
+  <tr cr="c" t="T" l="141" lnk="__HDL_srcfile_8.htm#141" z="        when readLength =&gt;" h="2080" c="g"/>
+  <tr cr="c" t="T" l="152" lnk="__HDL_srcfile_8.htm#152" z="        when writeFifo =&gt;" h="205172" c="g"/>
+  <tr cr="c" t="T" l="184" lnk="__HDL_srcfile_8.htm#184" z="        when sendData =&gt;" h="340" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg651"/><hr/><table>
+  <tr l="114" lnk="__HDL_srcfile_8.htm#114" z="            if(rx_done_tick = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="114" lnk="__HDL_srcfile_8.htm#114" z="            if(rx_done_tick = '1') then" h="696" c="g"/>
+  <tr cr="c" t="A" l="114" lnk="__HDL_srcfile_8.htm#114" z="            if(rx_done_tick = '1') then" h="3487" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg652"/><hr/><table>
+  <tr l="117" lnk="__HDL_srcfile_8.htm#117" z="                if(uart_rx_dout(7 downto 5) = w_char and uart_r..." c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="117" lnk="__HDL_srcfile_8.htm#117" z="                if(uart_rx_dout(7 downto 5) = w_char and uart_r..." h="24" c="g"/>
+  <tr cr="c" t="T" l="119" lnk="__HDL_srcfile_8.htm#119" z="                elsif(uart_rx_dout(7 downto 5) = w_char and uar..." h="322" c="g"/>
+  <tr cr="c" t="T" l="121" lnk="__HDL_srcfile_8.htm#121" z="                elsif(uart_rx_dout(7 downto 5) = r_char) then" h="343" c="g"/>
+  <tr cr="c" t="A" l="117" lnk="__HDL_srcfile_8.htm#117" z="                if(uart_rx_dout(7 downto 5) = w_char and uart_r..." h="7" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg653"/><hr/><table>
+  <tr l="125" lnk="__HDL_srcfile_8.htm#125" z="                if(uart_rx_dout(3) = '0') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="125" lnk="__HDL_srcfile_8.htm#125" z="                if(uart_rx_dout(3) = '0') then" h="50" c="g"/>
+  <tr cr="c" t="E" l="127" lnk="__HDL_srcfile_8.htm#127" z="                else" h="646" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg654"/><hr/><table>
+  <tr l="136" lnk="__HDL_srcfile_8.htm#136" z="            if(rx_done_tick = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="136" lnk="__HDL_srcfile_8.htm#136" z="            if(rx_done_tick = '1') then" h="36" c="g"/>
+  <tr cr="c" t="A" l="136" lnk="__HDL_srcfile_8.htm#136" z="            if(rx_done_tick = '1') then" h="120" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg655"/><hr/><table>
+  <tr l="142" lnk="__HDL_srcfile_8.htm#142" z="            if(rx_done_tick = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="142" lnk="__HDL_srcfile_8.htm#142" z="            if(rx_done_tick = '1') then" h="480" c="g"/>
+  <tr cr="c" t="A" l="142" lnk="__HDL_srcfile_8.htm#142" z="            if(rx_done_tick = '1') then" h="1600" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg656"/><hr/><table>
+  <tr l="147" lnk="__HDL_srcfile_8.htm#147" z="                if(broadcast_reg = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="147" lnk="__HDL_srcfile_8.htm#147" z="                if(broadcast_reg = '1') then" h="237" c="g"/>
+  <tr cr="c" t="A" l="147" lnk="__HDL_srcfile_8.htm#147" z="                if(broadcast_reg = '1') then" h="243" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg657"/><hr/><table>
+  <tr l="153" lnk="__HDL_srcfile_8.htm#153" z="            if(length_reg = 0) then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="153" lnk="__HDL_srcfile_8.htm#153" z="            if(length_reg = 0) then" h="320" c="g"/>
+  <tr cr="c" t="E" l="160" lnk="__HDL_srcfile_8.htm#160" z="            else" h="204852" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg658"/><hr/><table>
+  <tr l="154" lnk="__HDL_srcfile_8.htm#154" z="                if(broadcast_reg = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="154" lnk="__HDL_srcfile_8.htm#154" z="                if(broadcast_reg = '1') then" h="158" c="g"/>
+  <tr cr="c" t="E" l="156" lnk="__HDL_srcfile_8.htm#156" z="                else" h="162" c="g"/>
+  </table>
+  </div><div class="covered"><a name="cvg659"/><hr/><table>
+  <tr l="161" lnk="__HDL_srcfile_8.htm#161" z="                if(rx_done_tick = '1') then" c="G" p="100.00"/><tr/>
+  <tr cr="c" t="I" l="161" lnk="__HDL_srcfile_8.htm#161" z="                if(rx_done_tick = '1') then" h="47391" c="g"/>
+  <tr cr="c" t="A" l="161" lnk="__HDL_srcfile_8.htm#161" z="                if(rx_done_tick = '1') then" h="157461" c="g"/>
+  </table>
+  </div><div><a name="cvg660"/><hr/><table>
+  <tr l="162" lnk="__HDL_srcfile_8.htm#162" z="                    if(fifo_full = '0') then" c="Y" p="50.00"/><tr/>
+  <tr cr="c" t="I" l="162" lnk="__HDL_srcfile_8.htm#162" z="                    if(fifo_full = '0') then" h="47391" c="g"/>
+  <tr cr="m" t="E" l="165" lnk="__HDL_srcfile_8.htm#165" z="                    else" h="0" c="r"/>
+  </table>
+  </div><div class="missing"><a name="cvg661"/><hr/><table>
+  <tr l="167" lnk="__HDL_srcfile_8.htm#167" z="                        if(broadcast_reg = '1') then" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="167" lnk="__HDL_srcfile_8.htm#167" z="                        if(broadcast_reg = '1') then" h="0" c="r"/>
+  <tr cr="m" t="E" l="169" lnk="__HDL_srcfile_8.htm#169" z="                        else" h="0" c="r"/>
+  </table>
+  </div><div class="missing"><a name="cvg662"/><hr/><table>
+  <tr l="173" lnk="__HDL_srcfile_8.htm#173" z="                        if(broadcast_reg = '1') then" c="R" p="0.00"/><tr/>
+  <tr cr="m" t="I" l="173" lnk="__HDL_srcfile_8.htm#173" z="                        if(broadcast_reg = '1') then" h="0" c="r"/>
+  <tr cr="m" t="E" l="175" lnk="__HDL_srcfile_8.htm#175" z="                        else" h="0" c="r"/>
+  </table>
+  </div><div><a name="cvg663"/><hr/><table>
+  <tr l="185" lnk="__HDL_srcfile_8.htm#185" z="            if(tx_fsm_busy = '0') then" c="Y" p="50.00"/><tr/>
+  <tr cr="c" t="I" l="185" lnk="__HDL_srcfile_8.htm#185" z="            if(tx_fsm_busy = '0') then" h="340" c="g"/>
+  <tr cr="m" t="A" l="185" lnk="__HDL_srcfile_8.htm#185" z="            if(tx_fsm_busy = '0') then" h="0" c="r"/>
+  </table>
+  </div><script type="text/javascript" src="../scripts/buildbranchpage.js"></script>
+  <!-- make sure jumps to last few line nos work -->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  
+</body>
+</html>
